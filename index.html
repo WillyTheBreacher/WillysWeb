@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WillyTheBreacher</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/music.css">
+  <link rel="shortcut icon" href="assets/images/logo_pestaña.png" />
+</head>
+<body>
+
+  <canvas id="plexus"></canvas>
+
+  <div class="dropdown-container">
+    <button class="dropdown-btn" id="dropdownBtn">
+      <span aria-hidden>☰</span>
+    </button>
+    <nav class="dropdown-menu" id="menu" aria-label="Menú principal">
+      <a href="index.html" id="btnInicio">Inicio</a>
+      <a href="links.html" id="btnLinks">Links</a>
+      <a href="" id="btnContacto">Proyectos (Proximamente)</a>
+    </nav>
+  </div>
+
+  <div class="center-content">
+    <div class="profile">
+      <div class="name-wrap">
+        <div class="logo"><img src="assets/images/logo.png" alt="Logo" /></div>
+        <h1>WillyTheBreacher</h1>
+      </div>
+      <div class="username">@willythebreacher</div>
+
+      <div class="links">
+        <a class="link-btn" href="https://tiktok.com/@willythebreacher">TikTok</a>
+        <a class="link-btn" href="https://discord.gg/XkDK3rB8PV">Discord</a>
+        <a class="link-btn" href="https://youtube.com/@WillyTheBreacher">YouTube</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="music-player" id="musicPlayer" aria-live="polite">
+    <div class="song-info" id="trackTitle">Cargando...</div>
+    <div class="controls">
+      <button id="toggleBtn" title="Play/Pause">⏯</button>
+      <button id="nextBtn" title="Siguiente">⏭</button>
+      <input id="volumeControl" type="range" min="0" max="1" step="0.01">
+    </div>
+    <div class="song-state" id="playerState">Intentando reproducir...</div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>WillyTheBreacher</h3>
+        <p class="footer-desc">Creado para informar a los usuarios, hecho con amor 🩵</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 WillyTheBreacher — Todos los derechos reservados.
+    </div>
+  </footer>
+
+<div id="startOverlay">
+    <div class="overlay-text">Haga click para comenzar</div>
+</div>
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/plexus.js"></script>
+  <script src="assets/js/music.js"></script>
+</body>
+</html>
